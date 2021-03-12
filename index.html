@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="skorTablosu">
+        <span>Skor Tablosu</span>
+        <input type="button" value="Yeniden Oyna" onclick="document.location.reload(true);">
+        <div class="skor_panel">
+            <span id="skor"></span>
+            <span>- Kuş Vurdun</span>
+        </div>
+        <div id="kutu"></div>
+    </div>
+    <div class="kuslar" id="kuslar">
+        <div class="kus1">
+            <marquee class="hayvan" scrollamount="10" height="575px" width="100%" direction="down" onclick="gizle()">
+                <img class="bird" src="media/kus.png">
+            </marquee>
+        </div>
+        <div class="kus2">
+            <marquee class="hayvan" scrollamount="15" height="575px" width="100%" direction="down" onclick="gizle()">
+                <img  class="bird" src="media/kus.png">
+            </marquee>
+        </div>
+        <div class="kus3">
+            <marquee class="hayvan" scrollamount="30" height="575px" width="100%" direction="down" onclick="gizle()">
+                <img  class="bird" src="media/kus.png">
+            </marquee>
+        </div>
+        <div class="kus4">
+            <marquee class="hayvan" scrollamount="25" height="575px" width="100%" direction="down" onclick="gizle()">
+                <img  class="bird" src="media/kus.png">
+            </marquee>
+        </div>
+        <div class="kus5">
+            <marquee class="hayvan" scrollamount="35" height="575px" width="100%" direction="down" onclick="gizle()">
+                <img  class="bird" src="media/kus.png">
+            </marquee>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
