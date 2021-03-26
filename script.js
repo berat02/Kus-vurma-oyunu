@@ -1,6 +1,7 @@
 var skorEl = document.getElementById("skor")
 var kuslar = document.getElementById("kuslar")
 var birds = document.getElementsByClassName("bird");
+var birdd = document.getElementsByClassName("birdd")
 skorEl.innerHTML = 0;
 
 for(var i= 0 ;i<birds.length;i++){
@@ -8,13 +9,19 @@ for(var i= 0 ;i<birds.length;i++){
     item.addEventListener("click", function() {
         this.style.display = "none";
         skorEl.innerHTML -= 1
-        if (skorEl.innerHTML == -5) {
-            alert("Tebrikler Bütün Kuşları Vurdun");
+        if (skorEl.innerHTML == -9) {
+            alert("Tebrikler Bütün Düzensiz Fiil Taşıyan Kuşları Vurdun 😏");
             kuslar.innerHTML = '<img id="img1" src="media/sapan.png">'
         }
     
     })
 }
+function birddclick(){
+
+    alert("Yanlış Kuşu Vurdun O Düzenli Fiili Taşıyodu 🙁 ")
+
+}
+
 
 var kutu = document.getElementById("kutu");
 kutu.style.position = "relative";

@@ -7,39 +7,57 @@
 </head>
 
 <body>
-    <div class="skorTablosu">
-        <span>Skor Tablosu</span>
-        <input type="button" value="Yeniden Oyna" onclick="document.location.reload(true);">
-        <div class="skor_panel">
-            <span id="skor"></span>
-            <span>- Kuş Vurdun</span>
+    <div class="skor-buton-panel">
+        <button class="navigation-tekrar" onclick="document.location.reload(true);" style="vertical-align:middle">
+            <span>Yeniden Oyna</span>
+        </button>
+
+        <div class="skorTablosu">
+            <div class="skorTablosu-panel">
+                <span>9 TANE DÜZENSİZ FİİLERİ TAŞIYAN KUŞLARI VUR</span>
+                <br>
+                <div class="skor_panel">
+                    <span id="skor"></span>
+                    <span>- Kuş Vurdun</span>
+                </div>
+            </div>
+            <div id="kutu"></div>
         </div>
-        <div id="kutu"></div>
     </div>
     <div class="kuslar" id="kuslar">
         <div class="kus1">
-            <marquee class="hayvan" scrollamount="10" height="575px" width="100%" direction="down" onclick="gizle()">
-                <img class="bird" src="media/kus.png">
+            <marquee class="hayvan" scrollamount="10" height="575px" width="100%" direction="down" onclick="gizle()" >
+                <img class="bird" src="media/düzensiz/awoke.png"><br><br><br><br><br><br><br><br><br><br><br><br>
+                <img class="birdd" onclick="birddclick()" src="media/düzenli/join.png"><br><br><br><br><br><br><br><br><br><br><br><br>
+                <img class="bird" src="media/düzensiz/fallen.png">
             </marquee>
         </div>
         <div class="kus2">
             <marquee class="hayvan" scrollamount="15" height="575px" width="100%" direction="down" onclick="gizle()">
-                <img  class="bird" src="media/kus.png">
+                <img  class="bird" src="media/düzensiz/became.png"><br><br><br><br><br><br><br><br><br><br><br><br>
+                <img class="birdd"onclick="birddclick()" src="media/düzenli/look.png"><br><br><br><br><br><br><br><br><br><br><br><br>
+                <img class="bird" src="media/düzensiz/began.png">
             </marquee>
         </div>
         <div class="kus3">
-            <marquee class="hayvan" scrollamount="30" height="575px" width="100%" direction="down" onclick="gizle()">
-                <img  class="bird" src="media/kus.png">
+            <marquee class="hayvan" scrollamount="13" height="575px" width="100%" direction="down" onclick="gizle()">
+                <img  class="birdd"onclick="birddclick()" src="media/düzenli/mix.png"><br><br><br><br><br><br><br><br><br><br><br><br>
+                <img class="bird" src="media/düzensiz/eaten.png"><br><br><br><br><br><br><br><br><br><br><br><br>
+                <img class="bird" src="media/düzensiz/flown.png">
             </marquee>
         </div>
         <div class="kus4">
-            <marquee class="hayvan" scrollamount="25" height="575px" width="100%" direction="down" onclick="gizle()">
-                <img  class="bird" src="media/kus.png">
+            <marquee class="hayvan" scrollamount="15" height="575px" width="100%" direction="down" onclick="gizle()">
+                <img  class="birdd"onclick="birddclick()" src="media/düzenli/smile.png"><br><br><br><br><br><br><br><br><br><br><br><br>
+                <img class="bird" src="media/düzensiz/blew.png"><br><br><br><br><br><br><br><br><br><br><br><br>
+                <img class="birdd"onclick="birddclick()" src="media/düzenli/plan.png">
             </marquee>
         </div>
         <div class="kus5">
-            <marquee class="hayvan" scrollamount="35" height="575px" width="100%" direction="down" onclick="gizle()">
-                <img  class="bird" src="media/kus.png">
+            <marquee class="hayvan" scrollamount="18" height="575px" width="100%" direction="down" onclick="gizle()">
+                <img  class="birdd"onclick="birddclick()" src="media/düzenli/turn.png"><br><br><br><br><br><br><br><br><br><br><br><br>
+                <img class="bird" src="media/düzensiz/bore.png"><br><br><br><br><br><br><br><br><br><br><br><br>
+                <img class="bird" src="media/düzensiz/bitten.png">
             </marquee>
         </div>
     </div>
